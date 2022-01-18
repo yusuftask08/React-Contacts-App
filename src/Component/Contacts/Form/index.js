@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 const initFormValue = { fullName: '', phone_number: '' }
 
 function Form({ addContacts, contacts }) {
-    console.log('addContact :>> ', addContacts);
     const [form, setForm] = useState(initFormValue)
 
     useEffect(() => {

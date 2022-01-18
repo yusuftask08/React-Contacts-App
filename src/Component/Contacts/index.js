@@ -5,11 +5,10 @@ import Form from './Form'
 function Contacts() {
     const [contacts, setContacts] = useState([])
     useEffect(() => {
-        console.log('contacts :>> ', contacts);
     }, [contacts])
     return (
         <div>
-            <List />
+            <List contacts={contacts} />
             <Form addContacts={setContacts} contacts={contacts} />
         </div>
     )
